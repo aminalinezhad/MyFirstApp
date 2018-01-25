@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_project"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/img_toolbar_project"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/txt_toolbar_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="set in code" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_Text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/btn_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_image"
+            android:text="Send"
+            android:onClick="btnImageClick"/>
+        <ImageButton
+            android:id="@+id/btn_Send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send"
+            android:text="Send"
+            android:onClick="btnSendClick"
+            />
+    </LinearLayout>
+</LinearLayout>
