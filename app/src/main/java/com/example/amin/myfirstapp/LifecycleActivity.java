@@ -27,7 +27,7 @@ public class LifecycleActivity extends AppCompatActivity{
         txtLog = (TextView) findViewById(R.id.txt_Log);
         txtLog.setMovementMethod(new ScrollingMovementMethod());
 
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_check);
+//        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_check);
 
         if (savedInstanceState != null && savedInstanceState.containsKey(LOG_STATE_KEY)){
              logMessage(savedInstanceState.getString(LOG_STATE_KEY));
